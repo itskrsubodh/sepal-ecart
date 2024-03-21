@@ -7,6 +7,20 @@ const routes: Routes = [
     loadComponent: () =>
       import('./feature/user/user.component').then((m) => m.UserComponent),
   },
+  {
+    path: 'userdetail',
+    loadComponent: () =>
+      import('./feature/userdetail/userdetail.component').then(
+        (m) => m.UserdetailComponent
+      ),
+  },
+  {
+    path: 'userform',
+    loadComponent: () =>
+      import('./feature/userform/userform.component').then(
+        (m) => m.UserformComponent
+      ),
+  },
 ];
 
 @NgModule({
