@@ -1,0 +1,45 @@
+<form class="form">
+
+    <div class="grid row">
+        <div class="col-4">
+
+        </div>
+        <div class="col-4">
+            <input type="text" class="form-control" pInputText />
+        </div>
+        <div class="col-4">
+            <p-calendar class="form-control"></p-calendar>
+        </div>
+    </div>
+
+
+    <div class="grid row">
+        <div class="col-4">
+
+        </div>
+        <div class="col-4">
+            <p-dropdown ariaLabel="Options"></p-dropdown>
+        </div>
+        <div class="col-4">
+            <p-dropdown [options]="cities" class="form-control" placeholder="Select a City"></p-dropdown>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="col-4">
+            <textarea rows="5" cols="30" pInputTextarea class="form-control"></textarea>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="col-12 md:col-6 lg:col-3">
+            <p-dropdown ariaLabel="Options"></p-dropdown>
+        </div>
+        <div class="col-12 md:col-6 lg:col-3">
+            <p-dropdown ariaLabel="Options"></p-dropdown>
+        </div>
+        <div class="col-12 md:col-6 lg:col-3"><p-dropdown ariaLabel="Options"></p-dropdown>
+        </div>
+        <div class="col-12 md:col-6 lg:col-3"><p-dropdown ariaLabel="Options"></p-dropdown>
+        </div>
+    </div>
+</form>
